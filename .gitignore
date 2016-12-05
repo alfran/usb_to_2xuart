@@ -1,1 +1,11 @@
 *.o
+*.d
+*.map
+*.dep
+*.axf
+*.hex
+*.lnp
+*.crf
+*.__i
+*._ia
+*.alfran
