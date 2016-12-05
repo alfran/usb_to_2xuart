@@ -303,31 +303,7 @@ static int8_t CDC_Itf_Control_UARTx (uint8_t cmd, uint8_t* pbuf, uint16_t length
 
         /* Set the new configuration */
         ComPort_Config(&UartHandleX);
-				// ----- alfran ----- begin -----
-		
-				if (LineCoding.bitrate == 1200) 
-					{
-						while (1)
-							{
-								/* USER CODE END WHILE */
-								/* USER CODE BEGIN 3 */
-								//HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-								//HAL_Delay(500);
-								
-								// Reset SAMD21
-								HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET);
-								HAL_Delay(100);
-								HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
-								HAL_Delay(100);
-								// Debug loop
-								HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
-								HAL_Delay(500);
-								HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);
-								HAL_Delay(500);
-							}
-					}
-		
-				// ----- alfran ----- end -----
+
         break;
 
     case CDC_GET_LINE_CODING:
@@ -398,6 +374,17 @@ static int8_t CDC_Itf_Control_UARTy (uint8_t cmd, uint8_t* pbuf, uint16_t length
 
         /* Set the new configuration */
         ComPort_Config(&UartHandleY);
+		
+				// ----- alfran ----- begin -----
+				if (LineCoding.bitrate == 1200) 
+					{
+								// Reset SAMD21
+								HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET);
+								HAL_Delay(100);
+								HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
+					}
+				// ----- alfran ----- end -----
+					
         break;
 
     case CDC_GET_LINE_CODING:

@@ -432,12 +432,13 @@ ARM Macro Assembler    Page 7
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
 ork --depend=.\stm32f042k6_nucleo32_usb\startup_stm32f042x6.d -o.\stm32f042k6_n
-ucleo32_usb\startup_stm32f042x6.o -IC:\github\usb_to_2xuart\Projects\STM32F042K
-6-Nucleo\Applications\USB_Device\CDC_Standalone\MDK-ARM\RTE -IC:\Keil_v5\ARM\PA
-CK\ARM\CMSIS\4.5.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0
-\Device\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION 
-SETA 517" --predefine="_RTE_ SETA 1" --predefine="STM32F042x6 SETA 1" --list=st
-artup_stm32f042x6.lst startup_stm32f042x6.s
+ucleo32_usb\startup_stm32f042x6.o -IC:\Users\Ciccio\Documents\GitHub\usb_to_2xu
+art\Projects\STM32F042K6-Nucleo\Applications\USB_Device\CDC_Standalone\MDK-ARM\
+RTE -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\K
+eil\STM32F0xx_DFP\1.5.0\Device\Include --predefine="__EVAL SETA 1" --predefine=
+"__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 520" --predefine="_RTE_
+ SETA 1" --predefine="STM32F042x6 SETA 1" --list=startup_stm32f042x6.lst startu
+p_stm32f042x6.s
 
 
 
@@ -955,4 +956,4 @@ Symbol: __main
       At line 168 in file startup_stm32f042x6.s
 Comment: __main used once
 2 symbols
-387 symbols in table
+388 symbols in table

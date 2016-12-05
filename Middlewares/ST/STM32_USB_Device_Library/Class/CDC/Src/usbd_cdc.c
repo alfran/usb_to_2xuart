@@ -138,8 +138,7 @@ uint8_t UserTxBuffer[2][APP_TX_DATA_SIZE];/* Received Data over UART (CDC interf
 
 uint32_t CurrentwIndx = 0xff;
 
-//#define INTERFACE1_STRING_DESCRIPTOR "Interface 1"
-//#define INTERFACE2_STRING_DESCRIPTOR "Interface 2"
+
 
 extern uint8_t USBD_StrDesc[USBD_MAX_STR_DESC_SIZ];
 
