@@ -51,20 +51,6 @@
 #include "usbd_conf.h"
 
 /* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/*
-#define USBD_VID                      0x0483
-#define USBD_PID                      0x5740
-#define USBD_LANGID_STRING            0x409
-#define USBD_MANUFACTURER_STRING      "Arduino srl"
-#define USBD_PRODUCT_FS_STRING        "Arduino Tian"
-#define USBD_CONFIGURATION_FS_STRING  "VCP Config"
-#define USBD_INTERFACE_FS_STRING      "VCP Interface"
-
-#define INTERFACE1_STRING_DESCRIPTOR "Interface 1"
-#define INTERFACE2_STRING_DESCRIPTOR "Interface 2"
-*/
-
 /* Private macro -------------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
 uint8_t *USBD_VCP_DeviceDescriptor(USBD_SpeedTypeDef speed, uint16_t *length);

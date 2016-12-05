@@ -186,3 +186,8 @@ In order to make the program work, you must do the following:
 
  * <h3><center>&copy; COPYRIGHT STMicroelectronics</center></h3>
  */
+ 
+ /*
+ ----- Arduino srl Dev Team -----
+ Dec 02, 2016 - Francesco Alessi (alfran): Modified code to support STM32F042G6 (usbd_conf.c)
+ Dec 05, 2016 - Francesco Alessi (alfran): Modified to define string in a sinle place (usbd_desc.h)

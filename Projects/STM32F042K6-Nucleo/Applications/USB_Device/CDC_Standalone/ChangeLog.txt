@@ -1,0 +1,6 @@
+ ----- Arduino srl Dev Team -----
+ 
+ Change Log:
+ 
+ 1) Dec 02, 2016 - Francesco Alessi (alfran): Modified code to support STM32F042G6 (usbd_conf.c)
+ 2) Dec 05, 2016 - Francesco Alessi (alfran): Modified to define string in a sinle place (usbd_desc.h)

@@ -76,11 +76,11 @@ void HAL_PCD_MspInit(PCD_HandleTypeDef *hpcd)
     /* Configure USB DM and DP pins.
        This is optional, and maintained only for user guidance. */
 	
-	__HAL_RCC_SYSCFG_CLK_ENABLE();
-	__HAL_REMAP_PIN_ENABLE(HAL_REMAP_PA11_PA12);
+		__HAL_RCC_SYSCFG_CLK_ENABLE();
+		__HAL_REMAP_PIN_ENABLE(HAL_REMAP_PA11_PA12);
 	
     GPIO_InitStruct.Pin = (GPIO_PIN_11 | GPIO_PIN_12);
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+		GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF2_USB;
