@@ -60,19 +60,35 @@
 #define USARTx                           USART1
 #define USARTx_CLK_ENABLE()              __HAL_RCC_USART1_CLK_ENABLE();
 #define DMAx_CLK_ENABLE()                __HAL_RCC_DMA1_CLK_ENABLE()
-#define USARTx_RX_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOA_CLK_ENABLE()
-#define USARTx_TX_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOA_CLK_ENABLE()
+// ----- alfran ----- begin -----
+// original code
+//#define USARTx_RX_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOA_CLK_ENABLE()
+//#define USARTx_TX_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOA_CLK_ENABLE()
+// new code
+#define USARTx_RX_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOB_CLK_ENABLE()
+#define USARTx_TX_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOB_CLK_ENABLE()
+// ----- alfran ----- end -----
 
 #define USARTx_FORCE_RESET()             __HAL_RCC_USART1_FORCE_RESET()
 #define USARTx_RELEASE_RESET()           __HAL_RCC_USART1_RELEASE_RESET()
 
 /* Definition for USARTx Pins */
-#define USARTx_TX_PIN                    GPIO_PIN_9
-#define USARTx_TX_GPIO_PORT              GPIOA
-#define USARTx_TX_AF                     GPIO_AF1_USART1
-#define USARTx_RX_PIN                    GPIO_PIN_10
-#define USARTx_RX_GPIO_PORT              GPIOA
-#define USARTx_RX_AF                     GPIO_AF1_USART1
+// ----- alfran ----- begin -----
+// original code
+//#define USARTx_TX_PIN                    GPIO_PIN_9
+//#define USARTx_TX_GPIO_PORT              GPIOA
+//#define USARTx_TX_AF                     GPIO_AF1_USART1
+//#define USARTx_RX_PIN                    GPIO_PIN_10
+//#define USARTx_RX_GPIO_PORT              GPIOA
+//#define USARTx_RX_AF                     GPIO_AF1_USART1
+// new code
+#define USARTx_TX_PIN                    GPIO_PIN_6
+#define USARTx_TX_GPIO_PORT              GPIOB
+#define USARTx_TX_AF                     GPIO_AF0_USART1
+#define USARTx_RX_PIN                    GPIO_PIN_7
+#define USARTx_RX_GPIO_PORT              GPIOB
+#define USARTx_RX_AF                     GPIO_AF0_USART1
+// ----- alfran ----- end -----
 
 
 /* Definition for USARTx's NVIC: used for receiving data over Rx pin */
